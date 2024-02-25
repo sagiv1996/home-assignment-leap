@@ -1,12 +1,30 @@
-# Nest.js Backend Server
+# Homework for the Leap company
+
+Homework that includes a Full Stack exercise
+[![Watch the video](https://img.youtube.com/vi/kqjWiuLyyTk/maxresdefault.jpg)](https://www.youtube.com/watch?v=kqjWiuLyyTk)
+
+## Getting Started
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/sagiv1996/home-assignment-leap.git
+```
+
+2. Run docker-compose:
+
+```bash
+git clone docker-compose up -d
+```
+
+## Backend
 
 This backend server is built using Nest.js and provides APIs for user management and authentication.
 
-## Features
+### Features
 
-- **User Management**: Allows creating, reading, updating, and deleting users.
+- **\*User Management**: Allows creating, reading, updating, and deleting users.
 - **Authentication**: Provides authentication functionality with JWT tokens.
-- **External API Interaction**: Sends user-related data to an external API specified in the environment variable `EXTERNAL_API`.
 - **Token Verification**: Verifies user tokens for authentication before processing requests.
 - **CORS Whitelist**: Restricts CORS access to specified domains.
 
@@ -63,29 +81,21 @@ This backend server is built using Nest.js and provides APIs for user management
 - **USER_EMAIL**: Default email address used for user-related actions.
 - **USER_PASSWORD**: Default password used for user-related actions.
 
-## Getting Started
+## Frontend
 
-1. Clone this repository:
+This application is built using Nuxt.js (Nuxt3) and handles user management functionalities including viewing, editing, deleting, and creating users.
 
-```bash
-git clone https://github.com/your/repository.git
-```
+## Features
 
-2. Install dependencies using yarn:
+- **User Management**: View, edit, delete, and create users.
+- **Dark Mode / Light Mode**: Supports both dark and light mode for user interface customization.
+- **Middleware**: Includes middleware to redirect users to the login screen if they are not logged in.
 
-```bash
-yarn install
-```
+## Usage
 
-3. Set up environment variables:
+### To access the pages and functions of the application, you must log in using the credentials provided on the server side using:
 
-- Create a .env file in the root directory.
-- Define the required environment variables (EXTERNAL_API, JWT_SECRET, USER_EMAIL, USER_PASSWORD) in the .env file.
+1. Email: Fixed email variable that exists in the backend.
+2. Password: Fixed password variable that exists in the backend.
 
-4. start the server:
-
-```bash
-yarn start
-```
-
-The server will start running and listening for incoming requests.
+- If you attempt to access pages without logging in, the middleware will redirect you to the login screen.
