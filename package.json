@@ -1,0 +1,12 @@
+{
+  "name": "home-assignment-leap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\t",
+  "scripts": {
+    "start:dev front": "cd ui && npx nuxt dev",
+    "start:dev server": "cd server && nest start --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
