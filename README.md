@@ -14,7 +14,7 @@ git clone https://github.com/sagiv1996/home-assignment-leap.git
 2. Run docker-compose:
 
 ```bash
-git clone docker-compose up -d
+docker-compose up -d
 ```
 
 ## Backend
