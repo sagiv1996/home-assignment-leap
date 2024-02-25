@@ -27,6 +27,7 @@ UCard
 definePageMeta({
   middleware: ["auth"],
 });
+useHead({ title: "Users list" });
 const columns = [
   { label: "ID", key: "_id" },
   { label: "Updated At", key: "updatedAt" },

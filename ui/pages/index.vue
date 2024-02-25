@@ -21,6 +21,7 @@ const schema = z.object({
   password: z.string().min(4, "Must be at least 4 characters"),
 });
 type Schema = z.output<typeof schema>;
+useHead({ title: "Login page" });
 
 const state = reactive<{
   email?: string;

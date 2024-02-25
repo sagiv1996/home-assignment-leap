@@ -11,7 +11,7 @@ UCard()
             div Created at {{  getTimeAgo(user.createdAt)}}
             div Update at {{  getTimeAgo(user.updatedAt)}}
     template(v-slot:footer)
-        ULink(to="/user") Go back to list users
+        ULink(to="/user") Return to all users
 </template>
 
 <script setup lang="ts">

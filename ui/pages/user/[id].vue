@@ -7,6 +7,8 @@ user-card(v-else-if="!error" :user="user")
 definePageMeta({
   middleware: ["auth"],
 });
+useHead({ title: "Users info" });
+
 const { params } = useRoute();
 const userId: string = params.id.toString();
 
