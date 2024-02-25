@@ -4,9 +4,13 @@
   "description": "",
   "main": "\t",
   "scripts": {
-    "start:dev front": "cd ui && npx nuxt dev",
-    "start:dev server": "cd server && nest start --watch"
+    "start:dev ui": "cd ui && npx nuxt dev",
+    "start:dev server": "cd server && nest start --watch",
+    "build:ui": "cd ui && npx nuxt build",
+    "build:server": "cd server && nest build",
+    "start:prod:ui": "cd ui && npx nuxt preview",
+    "start:prod:server": "cd server && node dist/main"
   },
-  "author": "",
+  "author": "Sagiv Bonali",
   "license": "ISC"
 }
